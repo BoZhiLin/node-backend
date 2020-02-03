@@ -7,7 +7,6 @@ $ npm install
 // or
 
 $ yarn install
-
 ```
 
 ### Environment (optional)
@@ -41,5 +40,4 @@ $ npm start
 // or
 
 $ yarn start
-
 ```
