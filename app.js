@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var postsRouter = require('./routes/posts');
+var reportsRouter = require('./routes/reports');
 
 var app = express();
 var cors = require('cors');
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', router);
 router.use('/posts', postsRouter);
+router.use('/reports', reportsRouter);
 
 app.use('/', indexRouter);
 
